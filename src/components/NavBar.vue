@@ -2,29 +2,30 @@
     <main>
         <nav class="navbar navbar-expand-lg bg-warning">
           <div class="container-fluid">
-            <a class="navbar-brand" href="#">BestBuy86</a>
+            <RouterLink class="navbar-brand" to="/">
+              <img src="@\assets\images\logo.jpg" width="45" height="45" alt="logo"></RouterLink>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Login</a>
+                  <RouterLink class="nav-link" to="/login">Login</RouterLink>
                 </li>
+                <li><RouterLink class="nav-link" to="/venda-chave-troca">Venda-Chave-Troca</RouterLink></li>
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Estoque
+                    Taxas
                   </a>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Venda-Chave-Troca</a></li>
-                    <li><a class="dropdown-item" href="#">Taxas</a></li>
-                    <li><a class="dropdown-item" href="#">Listas</a></li>
-                    <li><a class="dropdown-item" href="#">Calculadora</a></li>
+                    <li><RouterLink class="dropdown-item" to="/taxas">MarketPlaces</RouterLink></li>
+                    <li><RouterLink class="dropdown-item" to="/ranges-taxa-G2A">Ranges Taxa G2A</RouterLink></li>
+                    <!-- <li><RouterLink class="dropdown-item" to="/taxas">Calculadora</RouterLink></li> -->
                   </ul>
                 </li>
+                <li><RouterLink class="nav-link" to="/recursos">Recursos</RouterLink></li>
               </ul>
             </div>
           </div>
